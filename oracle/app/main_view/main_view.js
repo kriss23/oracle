@@ -17,4 +17,6 @@ angular.module('oracleApp.mainView', ['ngRoute'])
 
     // INIT STUFFF ///////////////////////////////////////////////////////////////////////
     $scope.getBroadcasters();
+
+    $scope.twitterMessage="My new years resolution is 1920x1280 @bilalghalib"
 });
