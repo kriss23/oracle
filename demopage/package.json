@@ -1,5 +1,5 @@
 {
-  "name": "goofi",
+  "name": "oracle",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -20,6 +20,6 @@
   "homepage": "https://github.com/kriss23/oracle#readme",
   "dependencies": {
     "body-parser": "^1.15.0",
-    "express": "^4.13.4",
+    "express": "^4.13.4"
   }
 }
