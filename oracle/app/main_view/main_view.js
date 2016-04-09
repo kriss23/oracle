@@ -19,12 +19,21 @@ angular.module('oracleApp.mainView', ['ngRoute'])
     $scope.startApp = function(){
         $scope.isStartPage = true;
         $scope.isOnPage2 = true;
+
+        if ($scope.isOnPage3 == true){
+            $('.full-area').css({'transform': 'translateX(0vw)',
+                                 'transition-duration': '300ms'});
+            $scope.isOnPage3 = false;
+        }
     }
 
     $scope.post = function(){
         $scope.isStartPage = false;
         $scope.isOnPage2 = false;
         $scope.isOnPage3 = true;
+
+        $('.full-area').css({'transform': 'translateX(-100vw)',
+                             'transition-duration': '300ms'});
     }
 
     $scope.getBroadcasters = function(){
