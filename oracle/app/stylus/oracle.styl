@@ -1,4 +1,48 @@
+@import "nib"
+
 // First example, stylus syntax
+
+.page-1 {
+	position absolute
+	left 0
+	width 50%
+	height 100%
+}
+
+.page-2 {
+	position absolute
+	left 100%
+	width 50%
+	height 100%
+	display none
+}
+
+.full-area {
+	width 200%
+	height 100%
+}
+
+.start-button {
+	position absolute
+	left 50%
+	top 50%
+	height 160px
+	width 230px
+	border-radius 1em
+ 	transition all 1s ease
+ 	box-shadow #123456 0 0 10px
+}
+
+.start-button:disabled {
+	position absolute
+	left 0
+	top 0
+	height 100%
+	width 100%
+	border-radius 1em
+ 	transition all 1s ease
+ 	box-shadow #123456 0 0 10px
+}
 
 // Set colors as variables
 colorone = #F2F2F2
@@ -11,8 +55,8 @@ padding = 20
 // Reusable code chunk for common heading values
 headingStyle()
 	font-family 'Open Sans'
-	font-weight 600
-	line-height 1.618em
+	font-weight 800
+	line-height 2.618em
 
 // Utilize the above to create styles
 .wrapper

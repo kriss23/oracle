@@ -1,5 +1,26 @@
 <div class="text-center center-block" style="padding: 15px; width: 1000px">
-    <h1>Hello World!</h1>
-    <p>{{twitterMessage}}</p>
-</div>
+    <div class="full-area">
+        <div class="page-1">
+            <h1>Hello World!</h1>
+            <p>{{twitterMessage}}</p>
+
+            <p>{{isStartPage}}</p>
+
+            <button type="button"
+                    class="start-button btn btn-success"
+                    ng-disabled="isStartPage"
+                    ng-click="startApp()">Default</button>
+        </div>
+        <div class="page-2">
+            <h1>Hello World 2!</h1>
+            <p>{{twitterMessage}}</p>
+
+            <p>{{isStartPage}}</p>
+
+            <button type="button"
+                    class="start-button btn btn-success"
+                    ng-disabled="isStartPage"
+                    ng-click="startApp()">Default</button>
+        </div>
+    </div>
 </div>

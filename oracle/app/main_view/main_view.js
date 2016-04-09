@@ -10,6 +10,12 @@ angular.module('oracleApp.mainView', ['ngRoute'])
 }])
 
 .controller('MainViewCtrl', function($scope, $http) {
+    $scope.twitterMessage = "My new years resolution is 1920x1280 @bilalghalib";
+    $scope.isStartPage = false;
+
+    $scope.startApp = function(){
+        $scope.isStartPage = true;
+    }
 
     $scope.getBroadcasters = function(){
         return 0;
@@ -18,5 +24,4 @@ angular.module('oracleApp.mainView', ['ngRoute'])
     // INIT STUFFF ///////////////////////////////////////////////////////////////////////
     $scope.getBroadcasters();
 
-    $scope.twitterMessage="My new years resolution is 1920x1280 @bilalghalib"
 });
