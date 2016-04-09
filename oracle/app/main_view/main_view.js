@@ -12,9 +12,12 @@ angular.module('oracleApp.mainView', ['ngRoute'])
 .controller('MainViewCtrl', function($scope, $http) {
     $scope.twitterMessage = "My new years resolution is 1920x1280 @bilalghalib";
     $scope.isStartPage = false;
+    $scope.isOnPage2 = false;
+    $scope.isOnPage3 = false;
 
     $scope.startApp = function(){
         $scope.isStartPage = true;
+        $scope.isOnPage2 = true;
     }
 
     $scope.getBroadcasters = function(){

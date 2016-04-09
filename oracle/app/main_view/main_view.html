@@ -1,19 +1,39 @@
 <div class="text-center center-block">
     <div class="full-area">
-        <div class="page-1">
+        <div class="page-1"
+            ng-if="isOnPage3 == false">
             <img class="img-landing" src="/app/img/landing.svg" alt="">
             <button type="button"
                     class="start-button"
                     ng-disabled="isStartPage"
                     ng-click="startApp()">Default</button>
         </div>
-        <div class="page-2">
+        <div class="page-2"
+             ng-if="isOnPage2 == true">
             <h1>Hello World 2!</h1>
             <p>{{twitterMessage}}</p>
 
-            <p>{{isStartPage}}</p>
+            <p>isStartPage = {{isStartPage}}</p>
+            <p>isOnPage2 = {{isOnPage2}}</p>
 
-            <div ng-click="()">Start</div>
+            <button type="button"
+                    class="start-button btn btn-success"
+                    ng-disabled="isStartPage"
+                    ng-click="startApp()">Post</button>
+        </div>
+
+        <div class="page-3"
+             ng-if="isOnPage3 == true">
+            <h1>Hello World 2!</h1>
+            <p>{{twitterMessage}}</p>
+
+            <p>isStartPage = {{isStartPage}}</p>
+            <p>isOnPage2 = {{isOnPage2}}</p>
+
+            <button type="button"
+                    class="start-button btn btn-success"
+                    ng-disabled="isStartPage"
+                    ng-click="startApp()">Post</button>
         </div>
     </div>
 </div>
