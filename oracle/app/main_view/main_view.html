@@ -1,13 +1,9 @@
-<div class="text-center center-block" style="padding: 15px; width: 1000px">
+<div class="text-center center-block">
     <div class="full-area">
         <div class="page-1">
-            <h1>Hello World!</h1>
-            <p>{{twitterMessage}}</p>
-
-            <p>{{isStartPage}}</p>
-
+            <img class="img-landing" src="/app/img/landing.svg" alt="">
             <button type="button"
-                    class="start-button btn btn-success"
+                    class="start-button"
                     ng-disabled="isStartPage"
                     ng-click="startApp()">Default</button>
         </div>
@@ -17,10 +13,7 @@
 
             <p>{{isStartPage}}</p>
 
-            <button type="button"
-                    class="start-button btn btn-success"
-                    ng-disabled="isStartPage"
-                    ng-click="startApp()">Default</button>
+            <div ng-click="()">Start</div>
         </div>
     </div>
 </div>
