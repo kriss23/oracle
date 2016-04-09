@@ -33,7 +33,6 @@
 	background #f2f2f2
 	left 0
 	width 100vw
-	height 100vh
 }
 
 .img-3-top
@@ -56,12 +55,42 @@
 		flex-direction column
 		align-items flex-start
 		margin-left 40px
+		&:hover
+			transition 0.5s all
+			opacity 0.5
+			cursor pointer
 	.nav-right
 		flex 1
 		padding-right 40px
 		display flex
 		flex-direction column
 		align-items flex-end
+		&:hover
+			transition 0.5s all
+			opacity 0.5
+			cursor pointer
+
+.previous
+	display flex
+	justify-content center
+	align-items center
+	flex-wrap wrap
+	flex-direction column
+	background #1a1a1a
+	min-height 400px
+	padding 100px 0
+	margin 100px 0
+	.title
+		margin-bottom 100px
+.best-performing
+	display flex
+	justify-content center
+	flex-wrap wrap
+	flex-direction column
+	.performing-title
+		margin-bottom 100px
+	.performing-items
+		padding-bottom 100px
 
 .full-area {
 	overflow auto
