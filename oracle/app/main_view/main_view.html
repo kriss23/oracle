@@ -1,7 +1,7 @@
 <div class="text-center center-block">
     <div class="full-area">
         <div class="page-1"
-            ng-if="isOnPage3 == false">
+            ng-if="isOnStartPage == true">
             <img class="img-landing" src="/app/img/landing.svg" alt="">
             <button type="button"
                     class="start-button"
@@ -17,18 +17,19 @@
             <p>isOnPage2 = {{isOnPage2}}</p>
 
             <button type="button"
-                    class="start-button btn btn-success"
-                    ng-disabled="isStartPage"
-                    ng-click="startApp()">Post</button>
+                    class="post-button btn btn-success"
+                    ng-disabled="isPosted"
+                    ng-click="post()">Post</button>
         </div>
 
         <div class="page-3"
              ng-if="isOnPage3 == true">
-            <h1>Hello World 2!</h1>
+            <h1>Hello World 3!</h1>
             <p>{{twitterMessage}}</p>
 
             <p>isStartPage = {{isStartPage}}</p>
             <p>isOnPage2 = {{isOnPage2}}</p>
+            <p>isOnPage3 = {{isOnPage3}}</p>
 
             <button type="button"
                     class="start-button btn btn-success"
