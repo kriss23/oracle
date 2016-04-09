@@ -21,10 +21,10 @@ angular.module('oracleApp.mainView', ['ngRoute'])
         $scope.isOnPage2 = true;
 
         if ($scope.isOnPage3 == true){
-            $('.full-area').css({'transform': 'translateX(0vw)',
-                                 'transition-duration': '300ms'});
             $scope.isOnPage3 = false;
         }
+        $('.page2').css('background', 'rgba(85, 172, 238, 1)')
+
     }
 
     $scope.post = function(){
@@ -32,8 +32,10 @@ angular.module('oracleApp.mainView', ['ngRoute'])
         $scope.isOnPage2 = false;
         $scope.isOnPage3 = true;
 
-        $('.full-area').css({'transform': 'translateX(-100vw)',
-                             'transition-duration': '300ms'});
+        /* $('.full-area').css({'transform': 'translateX(-100vw)',
+                             'transition-duration': '1000ms'});
+        */
+         $('.page3').css('display', 'inherit')
     }
 
     $scope.getBroadcasters = function(){
