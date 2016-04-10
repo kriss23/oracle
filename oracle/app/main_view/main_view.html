@@ -2,7 +2,6 @@
     <div class="full-area">
         <div class="page-1"
             ng-if="isOnStartPage == true">
-            <p  ng-style="page1Style">BALH!</p>
             <img class="img-landing" src="/app/img/landing.svg" alt="">
             <button type="button"
                     class="start-button"
@@ -14,7 +13,7 @@
             <div class="form-container center-vertically text-center">
                 <div style="width: 100%">
                 <form class="input-form" ng-submit="post()" style="height: 300px;" class="form-2">
-                    <input ng-model="tweetText"
+                    <textarea ng-model="tweetText"
                            type="text"
                            style="background: none; border: none; padding: 30px; font-size: 44px; box-shadow: inset 0 0px 0px rgba(0,0,0,.075);"
                            class="form-control"
@@ -25,6 +24,8 @@
                             class="start-button"
                             ng-disabled="isPosted">Submit</button>
                 </form>
+
+
                 </div>
             </div>
         </div>
@@ -39,16 +40,27 @@
                 </div>
             </div>
 
-            <div class="input-form">
-                <div ng-controller="MainViewCtrl">
-                    <span editable-text="tweetText" e-form="textBtnForm">
-                        {{ tweetText || 'empty' }}
-                    </span>
-                    <button class="btn btn-default" ng-click="textBtnForm.$show()" ng-hide="textBtnForm.$visible">
-                        edit
-                    </button>
+            <div class="editable-tweet">
+                <div class="input-form" style="z-index: 15">
+                    <div ng-controller="MainViewCtrl">
+                        <span editable-text="tweetText2" e-form="textBtnForm">
+                            {{ tweetText2 }}
+                        </span>
+                        <button class="btn btn-default" ng-click="textBtnForm.$show()" ng-hide="textBtnForm.$visible">
+                            edit
+                        </button>
+                    </div>
                 </div>
             </div>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
 
             <img class="img-3-top" src="/app/img/page_3_1.svg" alt="">
             <div class="previous">
