@@ -1,5 +1,4 @@
 @import "nib"
-
 // First example, stylus syntax
 
 .full-area {
@@ -20,6 +19,10 @@
 
 .page-2 {
 	position absolute
+	display flex
+	align-items center
+	flex-direction column
+	justify-content center
 	left 0
 	width 100%
 	height 100%
@@ -130,3 +133,16 @@
  	background #f2f2f2
  	transform translate(0px,0px)
 }
+#input-2
+	background none
+	border none
+	text-align center
+	margin 0 20vw
+	border 1px solid red
+	width 1000px
+	&:focus
+		outline 0
+
+.form-2
+	border 1px solid red
+	background black
