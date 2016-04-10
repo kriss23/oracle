@@ -78,3 +78,7 @@ angular.module('oracleApp.mainView', ['ngRoute'])
     $scope.getBroadcasters();
 
 });
+
+var updateText = function(){
+    $(".img-3-top").attr("src", "/app/img/page_3_2.svg");
+}

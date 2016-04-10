@@ -90,6 +90,7 @@
   position: absolute;
   width: 500px;
   display: inline-block;
+<<<<<<< HEAD
   top: 30vh;
   left: 30vw;
 }
@@ -102,6 +103,10 @@
 .editable-input {
   font-size: 44px;
   font-weight: 200;
+=======
+  top: 40vh;
+  left: 30vw;
+>>>>>>> f9d53d02a53e933052039e6405570c24607edee1
 }
 .form-container {
   text-align: center;

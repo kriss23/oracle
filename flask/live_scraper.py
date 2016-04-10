@@ -19,7 +19,10 @@ import time
 import sys
 import datetime as dt
 from tweepy import Stream
+import codecs
 import gensim
+#import logging
+#logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
 
 ##read API access tokens
 configParser = ConfigParser.RawConfigParser()   
@@ -40,12 +43,15 @@ api = tweepy.API(auth)
 
 hashtag_finder = re.compile('(?:(?<=\s)|^)#(\w*[A-Za-z_]+\w*)')
 
+filer = codecs.open("scrape1.txt", 'wb', "utf-8")      
+
+
 class listener(StreamListener):
 
     def __init__(self):
         super(StreamListener, self).__init__()
         data = []
-        filer = open(scrape1.txt, 'wb')        
+          
         
         pass
 
@@ -74,6 +80,7 @@ class listener(StreamListener):
                     if len(matches) > 0: 
                         print  matches
                         
+            filer.write(data['text'].replace("\n"," ") + "\n")
             #print time.time() - t0db.create
         except: 
             print traceback.format_exc()
@@ -118,8 +125,12 @@ s.join()
 
 
 
+#every 15 minutes
+#close file
+#use new file
+#fit gensim word2vec
+
+#flask server method that returns matching hashtags for a query of words
 
 
-                        
-                        
-                        
+#time us up!
