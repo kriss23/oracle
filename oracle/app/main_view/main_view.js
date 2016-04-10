@@ -22,6 +22,12 @@ angular.module('oracleApp.mainView', ['ngRoute'])
                          'animation': 'fadein 0.5s',
                          'z-index': '-1'
                         };
+    $scope.page3Style = {'opacity': '0.0',
+                         'transition': 'opacity 0.5s ease',
+                         'transition': 'opacity 0.5s fade-in',
+                         'animation': 'fadein 0.5s',
+                         'z-index': '-1'
+                        };
 
     $scope.startApp = function(){
         $scope.isStartPage = true;
@@ -52,12 +58,12 @@ angular.module('oracleApp.mainView', ['ngRoute'])
                              'transition-duration': '1000ms'});
         */
 
-        $scope.page2Style = {'display': 'inherit',
-                             'opacity': '0',
+        $scope.page3Style = {'display': 'inherit',
+                             'opacity': '1',
                          	 'transition': 'opacity 0.5s ease',
                              'transition': 'opacity 0.5s fade-in',
                          	 'animation': 'fadein 0.5s',
-                             'z-index': '-1'
+                             'z-index': '1'
                             }
 
          $('.page3').css('display', 'inherit')
