@@ -186,7 +186,7 @@
        url('ProximaNovaCond-LightIt.ttf')  format('truetype'), /* Safari, Android, iOS */
        url('ProximaNovaCond-LightIt.svg#7ade8918d16a5bc419c0196fa1d616c0') format('svg'); /* Legacy iOS */
        
-  font-style:   normal;
+  font-style:   lightitalic;
   font-weight:  200;
 }
 
