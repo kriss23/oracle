@@ -16,6 +16,8 @@ angular.module('oracleApp.mainView', ['ngRoute'])
     $scope.isOnPage3 = false;
     $scope.tweetText = '';
     $scope.startButtonText = 'Start';
+    $scope.page1Style = {'display': 'inherit'}
+
     $scope.page2Style = {'opacity': '0.0',
                          'transition': 'opacity 0.5s ease',
                          'transition': 'opacity 0.5s fade-in',
@@ -74,11 +76,42 @@ angular.module('oracleApp.mainView', ['ngRoute'])
         return 0;
     }
 
+    $scope.btnNewClick = function(){
+        $scope.isStartPage = false;
+        $scope.isOnPage2 = true;
+        $scope.isOnPage3 = false;
+        $scope.page3Style = {'display': 'inherit',
+                             'opacity': '0',
+                         	 'transition': 'opacity 0.5s ease',
+                             'transition': 'opacity 0.5s fade-in',
+                         	 'animation': 'fadein 0.5s',
+                             'z-index': '-1'
+                            }
+        $scope.page2Style = {'display': 'inherit',
+                             'opacity': '1',
+                         	 'transition': 'opacity 0.5s ease',
+                             'transition': 'opacity 0.5s fade-in',
+                         	 'animation': 'fadein 0.5s',
+                             'z-index': '1'
+                            }
+
+        $scope.page1Style = {'display': 'none',
+                            }
+    }
+
     // INIT STUFFF ///////////////////////////////////////////////////////////////////////
     $scope.getBroadcasters();
 
 });
 
+var i = 1
+
 var updateText = function(){
-    $(".img-3-top").attr("src", "/app/img/page_3_2.svg");
+    if (i >= 5){
+        i = 1
+    } else {
+        i += 1
+    }
+
+    $(".img-3-top").attr("src", "/app/img/page_3_" + i + ".svg");
 }
