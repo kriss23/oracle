@@ -11,11 +11,12 @@
         </div>
 
         <div class="page-2" ng-style="page2Style">
-            <div class="center-vertically text-center">
-                <form class="input-form" ng-submit="post()" style="height: 300px; background: black;" class="form-2">
+            <div class="form-container center-vertically text-center">
+                <div style="width: 100%">
+                <form class="input-form" ng-submit="post()" style="height: 300px;" class="form-2">
                     <input ng-model="tweetText"
                            type="text"
-                           style="background: none; text-align: center; border: none; padding: 30px; font-size: 44px;"
+                           style="background: none; border: none; padding: 30px; font-size: 44px; box-shadow: inset 0 0px 0px rgba(0,0,0,.075);"
                            class="form-control"
                            placeholder="Write a Post or Tweet"
                            maxlength=140 />
