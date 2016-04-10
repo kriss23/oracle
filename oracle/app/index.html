@@ -13,8 +13,12 @@
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="app/css/style.css">
     <link rel="stylesheet" href="app/fonts/font.css">
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <link href="bower_components/angular-xeditable/dist/css/xeditable.css" rel="stylesheet">
+    <script src="bower_components/angular-xeditable/dist/js/xeditable.js"></script>
 </head>
-<body>
+<body ng-app="oracleApp" ng-controller="MainViewCtrl">
     <!--
     <ul class="menu">
       <li><a href="#/tv_view">tv_view</a></li>
@@ -26,8 +30,6 @@
     <div>Angular seed app: v<span app-version></span></div>
     -->
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="bower_components/angular/angular.js"></script>
-    <script src="bower_components/angular-route/angular-route.js"></script>
     <script src="bower_components/bootstrap/js/dropdown.js"></script>
     <script src="components/version/version.js"></script>
     <script src="components/version/version-directive.js"></script>
