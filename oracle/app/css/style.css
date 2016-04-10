@@ -87,8 +87,11 @@
   align-items: center;
 }
 .input-form {
+  position: absolute;
   width: 500px;
   display: inline-block;
+  top: 40vh;
+  left: 30vw;
 }
 .form-container {
   text-align: center;
