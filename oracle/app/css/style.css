@@ -105,6 +105,9 @@ transition: border-color ease-in-out .15s,
 .img-3-top {
   margin-top: 110px;
 }
+.counter {
+  margin-top: 30px;
+}
 .navbar {
   position: fixed;
   top: 0;
