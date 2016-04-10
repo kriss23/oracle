@@ -15,16 +15,30 @@ angular.module('oracleApp.mainView', ['ngRoute'])
     $scope.isOnPage2 = false;
     $scope.isOnPage3 = false;
     $scope.tweetText = '';
+    $scope.startButtonText = 'Start';
+    $scope.page2Style = {'opacity': '0.0',
+                         'transition': 'opacity 0.5s ease',
+                         'transition': 'opacity 0.5s fade-in',
+                         'animation': 'fadein 0.5s',
+                         'z-index': '-1'
+                        };
 
     $scope.startApp = function(){
         $scope.isStartPage = true;
         $scope.isOnPage2 = true;
+        $scope.startButtonText = ''
+
+        $scope.page2Style = {'display': 'inherit',
+                             'opacity': '1',
+                         	 'transition': 'opacity 0.5s ease',
+                             'transition': 'opacity 0.5s fade-in',
+                         	 'animation': 'fadein 0.5s',
+                             'z-index': '1'
+                            }
 
         if ($scope.isOnPage3 == true){
             $scope.isOnPage3 = false;
         }
-        $('.page2').css('background', 'rgba(85, 172, 238, 1)')
-
     }
 
     $scope.post = function(){
@@ -37,6 +51,15 @@ angular.module('oracleApp.mainView', ['ngRoute'])
         /* $('.full-area').css({'transform': 'translateX(-100vw)',
                              'transition-duration': '1000ms'});
         */
+
+        $scope.page2Style = {'display': 'inherit',
+                             'opacity': '0',
+                         	 'transition': 'opacity 0.5s ease',
+                             'transition': 'opacity 0.5s fade-in',
+                         	 'animation': 'fadein 0.5s',
+                             'z-index': '-1'
+                            }
+
          $('.page3').css('display', 'inherit')
     }
 
