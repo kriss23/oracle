@@ -52,6 +52,7 @@ angular.module('oracleApp.mainView', ['ngRoute'])
         $scope.isOnPage2 = false;
         $scope.isOnPage3 = true;
         $scope.tweetText = this.tweetText
+        $scope.tweetText2 = this.tweetText
         console.log("Twitter text: " + $scope.tweetText)
 
         /* $('.full-area').css({'transform': 'translateX(-100vw)',
