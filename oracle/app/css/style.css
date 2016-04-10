@@ -1,3 +1,6 @@
+* {
+  font-family: 'Proxima Nova Rg';
+}
 .full-area {
   width: 100vw;
   height: 100vh;
@@ -303,8 +306,9 @@
   background: none;
   border: none;
   text-align: center;
+  color: #fff;
+  font-family: "Proxima Nova rg";
   margin: 0 20vw;
-  border: 1px solid #f00;
   width: 1000px;
 }
 #input-2:focus {
