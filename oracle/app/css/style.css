@@ -90,8 +90,18 @@
   position: absolute;
   width: 500px;
   display: inline-block;
-  top: 40vh;
+  top: 30vh;
   left: 30vw;
+}
+.editabletext {
+  font-size: 44px;
+  font-weight: light;
+  text-decoration: none;
+  color: #000;
+}
+.editable-input {
+  font-size: 44px;
+  font-weight: 200;
 }
 .form-container {
   text-align: center;
