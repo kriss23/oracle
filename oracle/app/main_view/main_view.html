@@ -10,19 +10,13 @@
         </div>
         <div class="page-2"
              ng-if="isOnPage2 == true">
-            <h1>Hello World 2!</h1>
-            <p>{{twitterMessage}}</p>
-
-            <p>isStartPage = {{isStartPage}}</p>
-            <p>isOnPage2 = {{tweetText}}</p>
-
-            <form ng-submit="post()">
-                <input ng-model="tweetText" type="text" class="form-control" placeholder="Write a Post or Tweet" />
+            <form ng-submit="post()" style="height: 300px;" class="form-2">
+                <input ng-model="tweetText" type="text" id="input-2" style="background: none; border: none; padding: 30px; font-size: 44px;" placeholder="Write a Post or Tweet" />
                 <button type="button submit"
-                        class="post-button btn btn-success"
+                        class="start-button"
                         ng-disabled="isPosted">Post</button>
             </form>
-            <p>text{{tweetText}}</p>
+            <p>hm{{tweetText}}</p>
 
 
 
