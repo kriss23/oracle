@@ -14,17 +14,18 @@
             <p>{{twitterMessage}}</p>
 
             <p>isStartPage = {{isStartPage}}</p>
-            <p>isOnPage2 = {{isOnPage2}}</p>
+            <p>isOnPage2 = {{tweetText}}</p>
+
+            <form ng-submit="post()">
+                <input ng-model="tweetText" type="text" class="form-control" placeholder="Write a Post or Tweet" />
+                <button type="button submit"
+                        class="post-button btn btn-success"
+                        ng-disabled="isPosted">Post</button>
+            </form>
+            <p>text{{tweetText}}</p>
 
 
-            <input>
-            asdf
-            </input>
 
-            <button type="button"
-                    class="post-button btn btn-success"
-                    ng-disabled="isPosted"
-                    ng-click="post()">Post</button>
         </div>
 
         <div class="page-3"

@@ -14,7 +14,7 @@ angular.module('oracleApp.mainView', ['ngRoute'])
     $scope.isOnStartPage = true;
     $scope.isOnPage2 = false;
     $scope.isOnPage3 = false;
-
+    $scope.tweetText = '';
 
     $scope.startApp = function(){
         $scope.isStartPage = true;
@@ -31,6 +31,8 @@ angular.module('oracleApp.mainView', ['ngRoute'])
         $scope.isStartPage = false;
         $scope.isOnPage2 = false;
         $scope.isOnPage3 = true;
+        $scope.tweetText = this.tweetText
+        console.log("Twitter text: " + $scope.tweetText)
 
         /* $('.full-area').css({'transform': 'translateX(-100vw)',
                              'transition-duration': '1000ms'});
