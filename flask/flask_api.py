@@ -1,6 +1,9 @@
 # -*- coding: utf-8 -*-
 #sys.setdefaultencoding('utf-8')
 
+#returns twitter Rest API Tweets for given hashtags, for now simply sorted by 
+#retweets+favorites as an early "runninv version"
+
 import ConfigParser
 import os
 import sys
