@@ -12,16 +12,16 @@
 
         <div class="page-2" ng-style="page2Style">
             <div class="center-vertically text-center">
-                <form class="input-form" ng-submit="post()" style="height: 300px;" class="form-2">
+                <form class="input-form" ng-submit="post()" style="height: 300px; background: black;" class="form-2">
                     <input ng-model="tweetText"
                            type="text"
-                           style="background: none; border: none; padding: 30px; font-size: 44px;"
+                           style="background: none; text-align: center; border: none; padding: 30px; font-size: 44px;"
                            class="form-control"
                            placeholder="Write a Post or Tweet"
                            maxlength=140 />
-                    <p>{{tweetText.length}}/140</p>
+                    <p id="tweetlength">{{tweetText.length}}/140</p>
                     <button type="button submit"
-                            class="post-button btn btn-success"
+                            class="start-button"
                             ng-disabled="isPosted">Submit</button>
                 </form>
             </div>

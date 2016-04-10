@@ -1,5 +1,5 @@
 * {
-  font-family: 'Proxima Nova Rg';
+  font-family: 'Proxima Nova Lt';
 }
 .full-area {
   width: 100vw;
@@ -308,7 +308,7 @@
   transition: all 0.35s ease-in;
   background: #55acee;
   font-size: 18px;
-  font-family: 'proxima nova rg';
+  font-family: 'proxima nova Lt';
 }
 .start-button:disabled {
   position: absolute;
@@ -338,9 +338,10 @@
   border: none;
   text-align: center;
   color: #000;
-  font-family: "Proxima Nova rg";
+  font-family: "Proxima Nova Lt";
+  font-style: lightitalic;
   margin: 0 20vw;
-  width: 1000px;
+  width: 100px;
 }
 #input-2:focus {
   outline: 0;
@@ -348,4 +349,9 @@
 .form-2 {
   border: 1px solid #f00;
   background: #000;
+}
+#tweetlength {
+  font-size: 37px;
+  font-family: "Proxima Nova Lt";
+  font-style: lightitalic;
 }
