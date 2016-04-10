@@ -2,24 +2,29 @@
     <div class="full-area">
         <div class="page-1"
             ng-if="isOnStartPage == true">
+            <p  ng-style="page1Style">BALH!</p>
             <img class="img-landing" src="/app/img/landing.svg" alt="">
             <button type="button"
                     class="start-button"
                     ng-disabled="isStartPage"
-                    ng-click="startApp()">Default</button>
+                    ng-click="startApp()">{{startButtonText}}</button>
         </div>
-        <div class="page-2"
-             ng-if="isOnPage2 == true">
-            <form ng-submit="post()" style="height: 300px;" class="form-2">
-                <input ng-model="tweetText" type="text" id="input-2" style="background: none; border: none; padding: 30px; font-size: 44px;" placeholder="Write a Post or Tweet" />
-                <button type="button submit"
-                        class="start-button"
-                        ng-disabled="isPosted">Post</button>
-            </form>
-            <p>hm{{tweetText}}</p>
 
-
-
+        <div class="page-2" ng-style="page2Style">
+            <div class="center-vertically text-center">
+                <form class="input-form" ng-submit="post()" style="height: 300px;" class="form-2">
+                    <input ng-model="tweetText"
+                           type="text"
+                           style="background: none; border: none; padding: 30px; font-size: 44px;"
+                           class="form-control"
+                           placeholder="Write a Post or Tweet"
+                           maxlength=140 />
+                    <p>{{tweetText.length}}/140</p>
+                    <button type="button submit"
+                            class="post-button btn btn-success"
+                            ng-disabled="isPosted">Submit</button>
+                </form>
+            </div>
         </div>
 
         <div class="page-3"
@@ -32,7 +37,20 @@
                     <img src="/app/img/btn_new.svg" alt="btn_new">
                 </div>
             </div>
-             <img class="img-3-top" src="/app/img/page_3_top.svg" alt="">
+
+            <div class="input-form">
+                <div ng-controller="MainViewCtrl">
+                    <span editable-text="tweetText" e-form="textBtnForm">
+                        {{ tweetText || 'empty' }}
+                    </span>
+                    <button class="btn btn-default" ng-click="textBtnForm.$show()" ng-hide="textBtnForm.$visible">
+                        edit
+                    </button>
+                </div>
+            </div>
+
+
+            <img class="img-3-top" src="/app/img/page_3_top.svg" alt="">
 
             <div class="previous">
                 <div class="title">
