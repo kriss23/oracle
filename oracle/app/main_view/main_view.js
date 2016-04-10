@@ -113,5 +113,7 @@ var updateText = function(){
         i += 1
     }
 
+    i = Math.floor((Math.random() * 5) + 1  );
+
     $(".img-3-top").attr("src", "/app/img/page_3_" + i + ".svg");
 }
